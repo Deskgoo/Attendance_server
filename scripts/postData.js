@@ -8,7 +8,7 @@ async function login() {
   const url = "http://108.181.195.185:8000/api/method/login";
   const credentials = {
     usr: "Administrator",
-    pwd: "Deskgoo123",
+    pwd: "deskgoo123",
   };
 
   try {
