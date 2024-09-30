@@ -31,6 +31,9 @@ async function transformAndMatchData() {
       return map;
     }, {});
 
+    // Time difference in minutes (134 minutes in this case)
+    const timeDifferenceMinutes = 134;
+
     // Transform the MySQL data into the desired format
     const transformedData = mysqlData.map((row) => {
       const logType = row.status1 === 0 ? "IN" : "OUT";
@@ -38,6 +41,12 @@ async function transformAndMatchData() {
         employee_id: "Unknown",
         employee_name: "Unknown",
       };
+
+      // Adjust the timestamp to account for the time difference
+      const localTimestamp = new Date(row.timestamp);
+      const adjustedTimestamp = new Date(
+        localTimestamp.getTime() - timeDifferenceMinutes * 60 * 1000
+      ); // Adjust timestamp
 
       const doc = {
         docstatus: 0,
@@ -47,8 +56,8 @@ async function transformAndMatchData() {
         __unsaved: 1,
         owner: "Administrator",
         log_type: logType,
-        // Format the timestamp as 'YYYY-MM-DD HH:mm:ss'
-        time: new Date(row.timestamp)
+        // Format the adjusted timestamp as 'YYYY-MM-DD HH:mm:ss'
+        time: adjustedTimestamp
           .toISOString()
           .replace("T", " ")
           .substring(0, 19),
