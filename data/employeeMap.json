@@ -2,7 +2,7 @@
   {
     "device_employee_id": "1",
     "employee_id": "HR-EMP-00002",
-    "employee_name": "Amulya Dahal"
+    "employee_name": "Amulya Sharma"
   },
   {
     "device_employee_id": "2",
@@ -23,6 +23,11 @@
     "device_employee_id": "5",
     "employee_id": "HR-EMP-00006",
     "employee_name": "Shuvam BC"
+  },
+  {
+    "device_employee_id": "6",
+    "employee_id": "HR-EMP-00007",
+    "employee_name": "Farahan Ansari"
   }
  
 ]
