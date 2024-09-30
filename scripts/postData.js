@@ -8,7 +8,7 @@ const axiosInstance = wrapper(axios.create({ jar }));
 let authToken; // Define authToken in a scope accessible to both functions
 
 async function login() {
-  const url = "http://192.168.1.95:8000/api/method/login";
+  const url = "http://108.181.195.185:8000/api/method/login";
   const credentials = {
     usr: "Administrator",
     pwd: "deskgoo123",
@@ -43,7 +43,7 @@ async function login() {
 
 async function postData(data) {
   const url =
-    "http://192.168.1.95:8000/api/method/frappe.desk.form.save.savedocs";
+    "http://108.181.195.185:8000/api/method/frappe.desk.form.save.savedocs";
 
   const headers = {
     "Content-Type": "application/json",
