@@ -3,7 +3,6 @@ const { extractData } = require("./extractData");
 const { transformData } = require("./transformData");
 
 let authToken = null;
-
 async function login() {
   const url = "http://108.181.195.185:8000/api/method/login";
   const credentials = {
@@ -16,10 +15,13 @@ async function login() {
       withCredentials: true,
     });
 
-    authToken = response.headers["set-cookie"]; // For cookies
-    // authToken = response.data.token; // For token-based authentication
+    const statusCode = response.status;
+    const authToken = response.headers["set-cookie"]; // Capture the session cookies
 
     console.log("Login successful!");
+
+    // Return status and authToken for further use
+    return { statusCode, authToken };
   } catch (error) {
     console.error(
       "Login failed:",
@@ -35,16 +37,20 @@ async function postData(data) {
 
   const headers = {
     "Content-Type": "application/json",
-    Cookie: authToken, // For cookies
-    // Authorization: `Bearer ${authToken}`, // For token-based authentication
+    Cookie: authToken, // For cookies (e.g., sid)
+    // Authorization: `Bearer ${authToken}`, // Uncomment if using token-based auth
   };
 
   for (const item of data) {
     try {
+      console.log(`Posting data: ${JSON.stringify(item)}`);
       const response = await axios.post(url, item, { headers });
-      console.log(response.data);
+      console.log("Post successful:", response.data);
     } catch (error) {
-      console.error(error.response ? error.response.data : error.message);
+      console.error(
+        "Error posting data:",
+        error.response ? error.response.data : error.message
+      );
     }
   }
 }
