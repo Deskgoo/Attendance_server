@@ -51,7 +51,7 @@ async function transformAndMatchData() {
       const doc = {
         docstatus: 0,
         doctype: "Employee Checkin",
-        // attendance: "HR-ATT-2024-00023",
+        attendance: 0,
         shift: "General",
         name: `new-employee-checkin-${row.id}`, // Unique name for each check-in
         __islocal: 1,
