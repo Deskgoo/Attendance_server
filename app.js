@@ -22,12 +22,12 @@ async function run() {
 
       // Step 5: Post transformed data to Frappe
       console.log("Posting data to Frappe...");
-      await postData(transformedData, authToken); // Pass authToken (cookies or token) for authentication
+      await postData(transformedData, authToken); // Pass authToken for authentication
 
       console.log("Process completed successfully!");
     } else {
       // Abort if login fails
-      console.log("Login failed. Message:", response.data.message);
+      console.log("Login failed. Message:", message); // Log the message from the login response
       console.log("Aborting the process.");
     }
   } catch (error) {

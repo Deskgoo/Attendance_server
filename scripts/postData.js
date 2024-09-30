@@ -1,8 +1,12 @@
 const axios = require("axios");
-const { extractData } = require("./extractData");
-const { transformData } = require("./transformData");
+const { CookieJar } = require("tough-cookie");
+const { wrapper } = require("axios-cookiejar-support");
 
-let authToken = null;
+const jar = new CookieJar();
+const axiosInstance = wrapper(axios.create({ jar }));
+
+let authToken; // Define authToken in a scope accessible to both functions
+
 async function login() {
   const url = "http://108.181.195.185:8000/api/method/login";
   const credentials = {
@@ -11,17 +15,23 @@ async function login() {
   };
 
   try {
-    const response = await axios.post(url, credentials, {
-      withCredentials: true,
-    });
+    const response = await axiosInstance.post(url, credentials);
+    console.log("Login response:", response.data);
+    const cookies = response.headers["set-cookie"];
+    if (cookies) {
+      // Find the 'sid' cookie
+      const sidCookie = cookies.find((cookie) => cookie.startsWith("sid="));
+      if (sidCookie) {
+        authToken = sidCookie.split(";")[0]; // Get the sid value
+        console.log("Extracted authToken (sid):", authToken); // Log the extracted token
+      }
+    }
 
-    const statusCode = response.status;
-    const authToken = response.headers["set-cookie"]; // Capture the session cookies
-
-    console.log("Login successful!");
-
-    // Return status and authToken for further use
-    return { statusCode, authToken };
+    return {
+      statusCode: response.status,
+      authToken,
+      message: response.data,
+    }; // Return relevant response
   } catch (error) {
     console.error(
       "Login failed:",
@@ -37,14 +47,14 @@ async function postData(data) {
 
   const headers = {
     "Content-Type": "application/json",
-    Cookie: authToken, // For cookies (e.g., sid)
-    // Authorization: `Bearer ${authToken}`, // Uncomment if using token-based auth
+    Cookie: authToken, // Use the extracted sid cookie
+    // You can add other headers here
   };
 
   for (const item of data) {
     try {
       console.log(`Posting data: ${JSON.stringify(item)}`);
-      const response = await axios.post(url, item, { headers });
+      const response = await axiosInstance.post(url, item, { headers });
       console.log("Post successful:", response.data);
     } catch (error) {
       console.error(
@@ -58,12 +68,18 @@ async function postData(data) {
 if (require.main === module) {
   (async () => {
     try {
+      console.log("Logging in to Frappe...");
       await login();
-      const rows = await extractData();
-      const jsonData = transformData(rows);
+      const rows = await extractData(); // Ensure this function is defined
+      const jsonData = transformData(rows); // Ensure this function is defined
       await postData(jsonData);
     } catch (error) {
+      // Log the error message with more context
       console.error("Error in main process:", error.message);
+      if (error.response) {
+        console.error("Error response data:", error.response.data);
+        console.error("Error response status:", error.response.status);
+      }
     }
   })();
 }

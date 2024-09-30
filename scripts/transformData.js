@@ -4,6 +4,7 @@ const { extractData } = require("./extractData");
 
 const EMPLOYEE_MAPPING_PATH = path.join(__dirname, "../data/employeeMap.json");
 
+// Load employee mappings from a JSON file
 async function loadEmployeeMappings() {
   return new Promise((resolve, reject) => {
     fs.readFile(EMPLOYEE_MAPPING_PATH, "utf8", (err, data) => {
@@ -15,50 +16,63 @@ async function loadEmployeeMappings() {
   });
 }
 
+// Transform and match data from MySQL with employee mappings
 async function transformAndMatchData() {
-  const mysqlData = await extractData();
-  const employeeMappings = await loadEmployeeMappings();
+  try {
+    const mysqlData = await extractData();
+    const employeeMappings = await loadEmployeeMappings();
 
-  // Create a mapping of device_employee_id to employee_id and employee_name
-  const employeeMap = employeeMappings.reduce((map, employee) => {
-    map[employee.device_employee_id] = {
-      employee_id: employee.employee_id,
-      employee_name: employee.employee_name,
-    };
-    return map;
-  }, {});
+    // Create a mapping of device_employee_id to employee_id and employee_name
+    const employeeMap = employeeMappings.reduce((map, employee) => {
+      map[employee.device_employee_id] = {
+        employee_id: employee.employee_id,
+        employee_name: employee.employee_name,
+      };
+      return map;
+    }, {});
 
-  const transformedData = mysqlData.map((row) => {
-    const logType = row.status1 === 0 ? "NI" : "OUT";
-    const employeeData = employeeMap[row.employee_id] || {
-      employee_id: "Unknown",
-      employee_name: "Unknown",
-    };
+    // Transform the MySQL data into the desired format
+    const transformedData = mysqlData.map((row) => {
+      const logType = row.status1 === 0 ? "IN" : "OUT";
+      const employeeData = employeeMap[row.employee_id] || {
+        employee_id: "Unknown",
+        employee_name: "Unknown",
+      };
 
-    const doc = {
-      docstatus: 0,
-      doctype: "Employee Checkin",
-      name: `new-employee-checkin-${row.id}`,
-      __islocal: 1,
-      __unsaved: 1,
-      owner: "Administrator",
-      log_type: logType,
-      time: row.timestamp,
-      skip_auto_attendance: row.status5 || 0,
-      employee_name: employeeData.employee_name,
-      employee: employeeData.employee_id,
-      device_id: row.table,
-    };
+      const doc = {
+        docstatus: 0,
+        doctype: "Employee Checkin",
+        name: `new-employee-checkin-${row.id}`, // Unique name for each check-in
+        __islocal: 1,
+        __unsaved: 1,
+        owner: "Administrator",
+        log_type: logType,
+        // Format the timestamp as 'YYYY-MM-DD HH:mm:ss'
+        time: new Date(row.timestamp)
+          .toISOString()
+          .replace("T", " ")
+          .substring(0, 19),
+        skip_auto_attendance: row.status5 || 0,
+        employee_name: employeeData.employee_name,
+        employee: employeeData.employee_id,
+        device_id: row.table,
+      };
 
-    return {
-      doc: JSON.stringify(doc),
-      action: "Save",
-    };
-  });
+      // Return the formatted data for posting
+      return {
+        doc: JSON.stringify(doc), // Ensure the doc field is a properly formatted JSON string
+        action: "Save",
+      };
+    });
 
-  return transformedData;
+    return transformedData;
+  } catch (error) {
+    console.error("Error transforming data:", error);
+    return [];
+  }
 }
 
+// Execute the transformation when the module is run directly
 if (require.main === module) {
   (async () => {
     const data = await transformAndMatchData();
