@@ -1,7 +1,25 @@
+// Import dependencies
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+const employeeRoutes = require("./data/route/employeeAddroute"); // Adjust path if needed
+
 const { extractData } = require("./scripts/extractData");
 const { transformAndMatchData } = require("./scripts/transformData");
 const { login, postData } = require("./scripts/postData");
 
+const app = express();
+const PORT = 3000;
+
+app.use(express.json());
+app.use(employeeRoutes); // Use the employee routes
+
+// Server setup
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+// Main function for data processing and posting to Frappe
 async function run() {
   try {
     // Step 1: Login to Frappe
@@ -46,4 +64,7 @@ async function run() {
   }
 }
 
+// Execute the run function for continuous data processing
 run();
+
+module.exports = app;
