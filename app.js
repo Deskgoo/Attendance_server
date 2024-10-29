@@ -1,8 +1,7 @@
-// Import dependencies
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const employeeRoutes = require("./data/route/employeeAddroute"); // Adjust path if needed
+const employeeRoutes = require("./data/route/employeeAddroute");
 
 const { extractData } = require("./scripts/extractData");
 const { transformAndMatchData } = require("./scripts/transformData");
@@ -19,7 +18,6 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// Main function for data processing and posting to Frappe
 async function run() {
   try {
     // Step 1: Login to Frappe
@@ -64,3 +62,5 @@ async function run() {
 run();
 
 module.exports = app;
+
+//written by Nimesh Dhungel @Deskgoo

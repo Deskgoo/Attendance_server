@@ -4,9 +4,9 @@ const path = require("path");
 
 const router = express.Router();
 
-// Add new employee data (single or multiple)
+// Add new employee data
 router.post("/addEmployee", (req, res) => {
-  const newEmployees = Array.isArray(req.body) ? req.body : [req.body]; // Handle array of employees or single employee
+  const newEmployees = Array.isArray(req.body) ? req.body : [req.body];
 
   const filePath = path.join(__dirname, "employeeMap.json");
 
@@ -19,7 +19,6 @@ router.post("/addEmployee", (req, res) => {
     let addedEmployees = [];
     let skippedEmployees = [];
 
-    // Loop through the new employees
     newEmployees.forEach((newEmployee) => {
       const exists = employees.some(
         (emp) => emp.device_employee_id === newEmployee.device_employee_id
@@ -35,7 +34,6 @@ router.post("/addEmployee", (req, res) => {
       }
     });
 
-    // Write updated data to the file only if there were new employees added
     if (addedEmployees.length > 0) {
       fs.writeFile(
         filePath,

@@ -21,8 +21,7 @@ async function transformAndMatchData() {
   try {
     const mysqlData = await extractData();
     const employeeMappings = await loadEmployeeMappings();
-
-    // Create a mapping of device_employee_id to employee_id and employee_name
+    //create mapping of data from device to employeeMap.json
     const employeeMap = employeeMappings.reduce((map, employee) => {
       map[employee.device_employee_id] = {
         employee_id: employee.employee_id,
@@ -34,7 +33,6 @@ async function transformAndMatchData() {
     // Time difference in minutes (135 minutes in this case)
     const timeDifferenceMinutes = 135;
 
-    // Transform the MySQL data into the desired format
     const transformedData = mysqlData.map((row) => {
       const logType = row.status1 === 0 ? "IN" : "OUT";
       const employeeData = employeeMap[row.employee_id] || {
@@ -69,9 +67,8 @@ async function transformAndMatchData() {
         device_id: row.table,
       };
 
-      // Return the formatted data for posting
       return {
-        doc: JSON.stringify(doc), // Ensure the doc field is a properly formatted JSON string
+        doc: JSON.stringify(doc),
         action: "Save",
       };
     });
@@ -83,11 +80,10 @@ async function transformAndMatchData() {
   }
 }
 
-// Execute the transformation when the module is run directly
 if (require.main === module) {
   (async () => {
     const data = await transformAndMatchData();
-    console.log(JSON.stringify(data, null, 2)); // Print transformed data for debugging
+    // console.log(JSON.stringify(data, null, 2));
   })();
 }
 

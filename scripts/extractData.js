@@ -21,7 +21,7 @@ async function extractData() {
 if (require.main === module) {
   (async () => {
     const data = await extractData();
-    console.log(data); // Print fetched data for debugging
+    console.log(data);
   })();
 }
 

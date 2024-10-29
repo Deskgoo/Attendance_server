@@ -5,7 +5,7 @@ const { wrapper } = require("axios-cookiejar-support");
 const jar = new CookieJar();
 const axiosInstance = wrapper(axios.create({ jar }));
 
-let authToken; // Define authToken in a scope accessible to both functions
+let authToken;
 
 async function login() {
   const url = "http://108.181.195.185:8000/api/method/login";
@@ -19,11 +19,10 @@ async function login() {
     console.log("Login response:", response.data);
     const cookies = response.headers["set-cookie"];
     if (cookies) {
-      // Find the 'sid' cookie
       const sidCookie = cookies.find((cookie) => cookie.startsWith("sid="));
       if (sidCookie) {
         authToken = sidCookie.split(";")[0]; // Get the sid value
-        console.log("Extracted authToken (sid):", authToken); // Log the extracted token
+        console.log("Extracted authToken (sid):", authToken);
       }
     }
 
@@ -31,7 +30,7 @@ async function login() {
       statusCode: response.status,
       authToken,
       message: response.data,
-    }; // Return relevant response
+    };
   } catch (error) {
     console.error(
       "Login failed:",
@@ -47,8 +46,7 @@ async function postData(data) {
 
   const headers = {
     "Content-Type": "application/json",
-    Cookie: authToken, // Use the extracted sid cookie
-    // You can add other headers here
+    Cookie: authToken,
   };
 
   for (const item of data) {
@@ -70,11 +68,10 @@ if (require.main === module) {
     try {
       console.log("Logging in to Frappe...");
       await login();
-      const rows = await extractData(); // Ensure this function is defined
-      const jsonData = transformData(rows); // Ensure this function is defined
+      const rows = await extractData();
+      const jsonData = transformData(rows);
       await postData(jsonData);
     } catch (error) {
-      // Log the error message with more context
       console.error("Error in main process:", error.message);
       if (error.response) {
         console.error("Error response data:", error.response.data);
