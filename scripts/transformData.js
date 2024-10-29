@@ -46,7 +46,7 @@ async function transformAndMatchData() {
       const localTimestamp = new Date(row.timestamp);
       const adjustedTimestamp = new Date(
         localTimestamp.getTime() - timeDifferenceMinutes * 60 * 1000
-      ); // Adjust timestamp
+      );
 
       const doc = {
         docstatus: 0,
