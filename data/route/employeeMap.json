@@ -1,43 +1,912 @@
 [
   {
-    "device_employee_id": "1",
+    "employee_id": "HR-EMP-00001",
+    "employee_name": "Mohammad Jyaul Hak",
+    "employee_device_id": "9"
+  },
+  {
     "employee_id": "HR-EMP-00002",
-    "employee_name": "Amulya Sharma"
+    "employee_name": "Nabin Sharma",
+    "employee_device_id": "10"
   },
   {
-    "device_employee_id": "2",
     "employee_id": "HR-EMP-00003",
-    "employee_name": "Nimesh Dhungel"
+    "employee_name": "Chethnand Jha",
+    "employee_device_id": "11"
   },
   {
-    "device_employee_id": "3",
     "employee_id": "HR-EMP-00004",
-    "employee_name": "Rahul  Kumar sah"
+    "employee_name": "Astha Thapa",
+    "employee_device_id": "13"
   },
   {
-    "device_employee_id": "4",
     "employee_id": "HR-EMP-00005",
-    "employee_name": "Shreesti Pokhrel"
+    "employee_name": "Jyoti Thakur",
+    "employee_device_id": "15"
   },
   {
-    "device_employee_id": "5",
     "employee_id": "HR-EMP-00006",
-    "employee_name": "Shuvam BC"
+    "employee_name": "Nirmala Sharma",
+    "employee_device_id": "19"
   },
   {
-    "device_employee_id": "6",
     "employee_id": "HR-EMP-00007",
-    "employee_name": "Farahan Ansari"
+    "employee_name": "Rajesh Dev",
+    "employee_device_id": "21"
   },
   {
-    "device_employee_id": "7",
+    "employee_id": "HR-EMP-00008",
+    "employee_name": "Surendra Mehta",
+    "employee_device_id": "22"
+  },
+  {
+    "employee_id": "HR-EMP-00009",
+    "employee_name": "Puspha Devi Rajbanshi",
+    "employee_device_id": "24"
+  },
+  {
+    "employee_id": "HR-EMP-00010",
+    "employee_name": "Mohan Paswan",
+    "employee_device_id": "26"
+  },
+  {
+    "employee_id": "HR-EMP-00011",
+    "employee_name": "Balendra Kumar  Mehta",
+    "employee_device_id": "27"
+  },
+  {
+    "employee_id": "HR-EMP-00012",
+    "employee_name": "Nisha Keshari",
+    "employee_device_id": "29"
+  },
+  {
+    "employee_id": "HR-EMP-00013",
+    "employee_name": "Pawan Marik",
+    "employee_device_id": "31"
+  },
+  {
     "employee_id": "HR-EMP-00014",
-    "employee_name": "Shrija Aryal"
+    "employee_name": "Parwati Mehta",
+    "employee_device_id": "34"
   },
   {
-    "device_employee_id": "8",
     "employee_id": "HR-EMP-00015",
-    "employee_name": "Rajan singh"
+    "employee_name": "Puspha Yadav",
+    "employee_device_id": "45"
+  },
+  {
+    "employee_id": "HR-EMP-00016",
+    "employee_name": "Pinky Bishwas",
+    "employee_device_id": "48"
+  },
+  {
+    "employee_id": "HR-EMP-00017",
+    "employee_name": "Sabina  Thapa",
+    "employee_device_id": "50"
+  },
+  {
+    "employee_id": "HR-EMP-00018",
+    "employee_name": "Gayatri Rajbanshi",
+    "employee_device_id": "51"
+  },
+  {
+    "employee_id": "HR-EMP-00019",
+    "employee_name": "Archana Rajbanshi",
+    "employee_device_id": "53"
+  },
+  {
+    "employee_id": "HR-EMP-00020",
+    "employee_name": "Palty  Magar",
+    "employee_device_id": "56"
+  },
+  {
+    "employee_id": "HR-EMP-00021",
+    "employee_name": "Raju Yadav",
+    "employee_device_id": "57"
+  },
+  {
+    "employee_id": "HR-EMP-00022",
+    "employee_name": "Ramesh  Kumar  Mandal",
+    "employee_device_id": "58"
+  },
+  {
+    "employee_id": "HR-EMP-00023",
+    "employee_name": "Ambed Kumar  Amatya",
+    "employee_device_id": "61"
+  },
+  {
+    "employee_id": "HR-EMP-00024",
+    "employee_name": "Binod Sah",
+    "employee_device_id": "63"
+  },
+  {
+    "employee_id": "HR-EMP-00025",
+    "employee_name": "Madhab Karn",
+    "employee_device_id": "65"
+  },
+  {
+    "employee_id": "HR-EMP-00026",
+    "employee_name": "Santosh Bhandari",
+    "employee_device_id": "66"
+  },
+  {
+    "employee_id": "HR-EMP-00027",
+    "employee_name": "Samjhana Rajbanshi",
+    "employee_device_id": "12"
+  },
+  {
+    "employee_id": "HR-EMP-00028",
+    "employee_name": "Khusbu Yadav",
+    "employee_device_id": "14"
+  },
+  {
+    "employee_id": "HR-EMP-00029",
+    "employee_name": "Sangita Thapa Magar",
+    "employee_device_id": "16"
+  },
+  {
+    "employee_id": "HR-EMP-00030",
+    "employee_name": "Muna Kathet",
+    "employee_device_id": "18"
+  },
+  {
+    "employee_id": "HR-EMP-00031",
+    "employee_name": "Keshab Adhikari",
+    "employee_device_id": "20"
+  },
+  {
+    "employee_id": "HR-EMP-00032",
+    "employee_name": "Milan Kumar  Priya",
+    "employee_device_id": "23"
+  },
+  {
+    "employee_id": "HR-EMP-00033",
+    "employee_name": "Mandira Rajbanshi",
+    "employee_device_id": "32"
+  },
+  {
+    "employee_id": "HR-EMP-00034",
+    "employee_name": "Baby Sahani",
+    "employee_device_id": "33"
+  },
+  {
+    "employee_id": "HR-EMP-00035",
+    "employee_name": "Sakuntala Dhakal",
+    "employee_device_id": "35"
+  },
+  {
+    "employee_id": "HR-EMP-00036",
+    "employee_name": "Gudiya  Kumari Sah",
+    "employee_device_id": "36"
+  },
+  {
+    "employee_id": "HR-EMP-00037",
+    "employee_name": "Nitu Yadav",
+    "employee_device_id": "37"
+  },
+  {
+    "employee_id": "HR-EMP-00038",
+    "employee_name": "Laxmi Sardar",
+    "employee_device_id": "38"
+  },
+  {
+    "employee_id": "HR-EMP-00039",
+    "employee_name": "Anita Lamichhane",
+    "employee_device_id": "39"
+  },
+  {
+    "employee_id": "HR-EMP-00040",
+    "employee_name": "Rashmi Gupta",
+    "employee_device_id": "42"
+  },
+  {
+    "employee_id": "HR-EMP-00041",
+    "employee_name": "Babita Sardar",
+    "employee_device_id": "43"
+  },
+  {
+    "employee_id": "HR-EMP-00042",
+    "employee_name": "Kalpana Kumari Chaudhary",
+    "employee_device_id": "44"
+  },
+  {
+    "employee_id": "HR-EMP-00043",
+    "employee_name": "Hira Thakur",
+    "employee_device_id": "46"
+  },
+  {
+    "employee_id": "HR-EMP-00044",
+    "employee_name": "Abina Chaudhary",
+    "employee_device_id": "47"
+  },
+  {
+    "employee_id": "HR-EMP-00045",
+    "employee_name": "Pradeep Mehta",
+    "employee_device_id": "49"
+  },
+  {
+    "employee_id": "HR-EMP-00046",
+    "employee_name": "Asmita Mandal",
+    "employee_device_id": "52"
+  },
+  {
+    "employee_id": "HR-EMP-00047",
+    "employee_name": "Asmita Tamang",
+    "employee_device_id": "54"
+  },
+  {
+    "employee_id": "HR-EMP-00048",
+    "employee_name": "Sharmila Malik",
+    "employee_device_id": "60"
+  },
+  {
+    "employee_id": "HR-EMP-00049",
+    "employee_name": "Sanjay Kumar Mandal",
+    "employee_device_id": "62"
+  },
+  {
+    "employee_id": "HR-EMP-00050",
+    "employee_name": "Laxmi Mandal",
+    "employee_device_id": "64"
+  },
+  {
+    "employee_id": "HR-EMP-00051",
+    "employee_name": "Rakesh Kumar Majhi",
+    "employee_device_id": "67"
+  },
+  {
+    "employee_id": "HR-EMP-00052",
+    "employee_name": "Shiv Narayan Biswas",
+    "employee_device_id": "68"
+  },
+  {
+    "employee_id": "HR-EMP-00053",
+    "employee_name": "Susmita Kumari Gangai",
+    "employee_device_id": "69"
+  },
+  {
+    "employee_id": "HR-EMP-00054",
+    "employee_name": "Neelam Chaudhary",
+    "employee_device_id": "70"
+  },
+  {
+    "employee_id": "HR-EMP-00055",
+    "employee_name": "Sunaina Kumari Chaudhary",
+    "employee_device_id": "71"
+  },
+  {
+    "employee_id": "HR-EMP-00056",
+    "employee_name": "Jyoti Kumari Singh",
+    "employee_device_id": "72"
+  },
+  {
+    "employee_id": "HR-EMP-00057",
+    "employee_name": "Naresh Kumar Mehta",
+    "employee_device_id": "74"
+  },
+  {
+    "employee_id": "HR-EMP-00058",
+    "employee_name": "Ranjana Chaudhary",
+    "employee_device_id": "75"
+  },
+  {
+    "employee_id": "HR-EMP-00059",
+    "employee_name": "Kajal Kumari Sah",
+    "employee_device_id": "77"
+  },
+  {
+    "employee_id": "HR-EMP-00060",
+    "employee_name": "Shital Shah",
+    "employee_device_id": "78"
+  },
+  {
+    "employee_id": "HR-EMP-00061",
+    "employee_name": "Madhu Devi Paswan",
+    "employee_device_id": "79"
+  },
+  {
+    "employee_id": "HR-EMP-00062",
+    "employee_name": "Ramkali Rajbanshi",
+    "employee_device_id": "80"
+  },
+  {
+    "employee_id": "HR-EMP-00063",
+    "employee_name": "Sweta Chaudhary",
+    "employee_device_id": "81"
+  },
+  {
+    "employee_id": "HR-EMP-00064",
+    "employee_name": "Chandrakala Rai",
+    "employee_device_id": "82"
+  },
+  {
+    "employee_id": "HR-EMP-00065",
+    "employee_name": "Umesh Sah",
+    "employee_device_id": "59"
+  },
+  {
+    "employee_id": "HR-EMP-00066",
+    "employee_name": "Akash Yadav",
+    "employee_device_id": "17"
+  },
+  {
+    "employee_id": "HR-EMP-00067",
+    "employee_name": "Rubina Biswas",
+    "employee_device_id": "25"
+  },
+  {
+    "employee_id": "HR-EMP-00068",
+    "employee_name": "Manoj Rajbhansi",
+    "employee_device_id": "28"
+  },
+  {
+    "employee_id": "HR-EMP-00069",
+    "employee_name": "Punita Sahani",
+    "employee_device_id": "30"
+  },
+  {
+    "employee_id": "HR-EMP-00070",
+    "employee_name": "Shekha Paswan",
+    "employee_device_id": "40"
+  },
+  {
+    "employee_id": "HR-EMP-00071",
+    "employee_name": "Keshari Mandal",
+    "employee_device_id": "41"
+  },
+  {
+    "employee_id": "HR-EMP-00072",
+    "employee_name": "PawanChari Sardar",
+    "employee_device_id": "55"
+  },
+  {
+    "employee_id": "HR-EMP-00073",
+    "employee_name": "Kaushalya Kumari Mandal",
+    "employee_device_id": "73"
+  },
+  {
+    "employee_id": "HR-EMP-00074",
+    "employee_name": "Raj Kishore Chaudhary",
+    "employee_device_id": "76"
+  },
+  {
+    "employee_id": "HR-EMP-00075",
+    "employee_name": "Dipak Parsila",
+    "employee_device_id": "83"
+  },
+  {
+    "employee_id": "HR-EMP-00076",
+    "employee_name": "Tripti Rai",
+    "employee_device_id": "84"
+  },
+  {
+    "employee_id": "HR-EMP-00077",
+    "employee_name": "Shristina Tamang",
+    "employee_device_id": "85"
+  },
+  {
+    "employee_id": "HR-EMP-00078",
+    "employee_name": "Phul  Kumari  Mandal",
+    "employee_device_id": "86"
+  },
+  {
+    "employee_id": "HR-EMP-00079",
+    "employee_name": "Anita Paswan",
+    "employee_device_id": "87"
+  },
+  {
+    "employee_id": "HR-EMP-00080",
+    "employee_name": "Dharmanand Yadav",
+    "employee_device_id": "88"
+  },
+  {
+    "employee_id": "HR-EMP-00081",
+    "employee_name": "Sudhir Chaudhary",
+    "employee_device_id": "89"
+  },
+  {
+    "employee_id": "HR-EMP-00082",
+    "employee_name": "Kiran Yadav",
+    "employee_device_id": "90"
+  },
+  {
+    "employee_id": "HR-EMP-00083",
+    "employee_name": "Sushila  Kumari Rajbhansi",
+    "employee_device_id": "91"
+  },
+  {
+    "employee_id": "HR-EMP-00084",
+    "employee_name": "Anar  Devi Mukhiya",
+    "employee_device_id": "92"
+  },
+  {
+    "employee_id": "HR-EMP-00085",
+    "employee_name": "Bhagbati Devi Chaudhary Sardar",
+    "employee_device_id": "93"
+  },
+  {
+    "employee_id": "HR-EMP-00086",
+    "employee_name": "Jhanak Raj Dahal",
+    "employee_device_id": "94"
+  },
+  {
+    "employee_id": "HR-EMP-00087",
+    "employee_name": "Tomila Bharati",
+    "employee_device_id": "95"
+  },
+  {
+    "employee_id": "HR-EMP-00088",
+    "employee_name": "Mandira Manandhar",
+    "employee_device_id": "96"
+  },
+  {
+    "employee_id": "HR-EMP-00090",
+    "employee_name": "Alisha Rajbanshi",
+    "employee_device_id": "97"
+  },
+  {
+    "employee_id": "HR-EMP-00091",
+    "employee_name": "Tika  Suwal",
+    "employee_device_id": "98"
+  },
+  {
+    "employee_id": "HR-EMP-00092",
+    "employee_name": "Rekha Keshari",
+    "employee_device_id": "99"
+  },
+  {
+    "employee_id": "HR-EMP-00093",
+    "employee_name": "Kanchan Bishwash",
+    "employee_device_id": "100"
+  },
+  {
+    "employee_id": "HR-EMP-00094",
+    "employee_name": "Nilu Kumari Mehta",
+    "employee_device_id": "101"
+  },
+  {
+    "employee_id": "HR-EMP-00095",
+    "employee_name": "Dipa  Pokharel",
+    "employee_device_id": "103"
+  },
+  {
+    "employee_id": "HR-EMP-00096",
+    "employee_name": "Santi  Kumari Chaudhary",
+    "employee_device_id": "102"
+  },
+  {
+    "employee_id": "HR-EMP-00097",
+    "employee_name": "Babita Gautam",
+    "employee_device_id": "104"
+  },
+  {
+    "employee_id": "HR-EMP-00098",
+    "employee_name": "Aftab Alam",
+    "employee_device_id": "105"
+  },
+  {
+    "employee_id": "HR-EMP-00099",
+    "employee_name": "Om Prakash  Yadav",
+    "employee_device_id": "106"
+  },
+  {
+    "employee_id": "HR-EMP-00100",
+    "employee_name": "Zawed Alam",
+    "employee_device_id": "107"
+  },
+  {
+    "employee_id": "HR-EMP-00101",
+    "employee_name": "Anita Bhujel",
+    "employee_device_id": "108"
+  },
+  {
+    "employee_id": "HR-EMP-00102",
+    "employee_name": "Parwati Chaudhary",
+    "employee_device_id": "109"
+  },
+  {
+    "employee_id": "HR-EMP-00103",
+    "employee_name": "Mira Devi Subba limbu",
+    "employee_device_id": "110"
+  },
+  {
+    "employee_id": "HR-EMP-00104",
+    "employee_name": "Sonam Chaudhary",
+    "employee_device_id": "111"
+  },
+  {
+    "employee_id": "HR-EMP-00105",
+    "employee_name": "Anisha  Bhujel",
+    "employee_device_id": "112"
+  },
+  {
+    "employee_id": "HR-EMP-00106",
+    "employee_name": "Monika  Deo",
+    "employee_device_id": "113"
+  },
+  {
+    "employee_id": "HR-EMP-00107",
+    "employee_name": "Binu Tiwari",
+    "employee_device_id": "114"
+  },
+  {
+    "employee_id": "HR-EMP-00108",
+    "employee_name": "Binita Kamat",
+    "employee_device_id": "115"
+  },
+  {
+    "employee_id": "HR-EMP-00110",
+    "employee_name": "Ajit  Kumar Chaudhary",
+    "employee_device_id": "116"
+  },
+  {
+    "employee_id": "HR-EMP-00111",
+    "employee_name": "Sharda Mehta",
+    "employee_device_id": "117"
+  },
+  {
+    "employee_id": "HR-EMP-00112",
+    "employee_name": "Dev  Kumari Yadav",
+    "employee_device_id": "121"
+  },
+  {
+    "employee_id": "HR-EMP-00113",
+    "employee_name": "Sujata Rai",
+    "employee_device_id": "122"
+  },
+  {
+    "employee_id": "HR-EMP-00114",
+    "employee_name": "Ganga Thapa Magar",
+    "employee_device_id": "118"
+  },
+  {
+    "employee_id": "HR-EMP-00115",
+    "employee_name": "Reshma Khatoon",
+    "employee_device_id": "119"
+  },
+  {
+    "employee_id": "HR-EMP-00116",
+    "employee_name": "Anu Kumari  Sah",
+    "employee_device_id": "120"
+  },
+  {
+    "employee_id": "HR-EMP-00117",
+    "employee_name": "Dev  Narayan Sah",
+    "employee_device_id": "123"
+  },
+  {
+    "employee_id": "HR-EMP-00118",
+    "employee_name": "Durga  Kumari Mandal",
+    "employee_device_id": "124"
+  },
+  {
+    "employee_id": "HR-EMP-00119",
+    "employee_name": "Nitu Barma",
+    "employee_device_id": "125"
+  },
+  {
+    "employee_id": "HR-EMP-00120",
+    "employee_name": "Suprima Yadav",
+    "employee_device_id": "126"
+  },
+  {
+    "employee_id": "HR-EMP-00121",
+    "employee_name": "Anand Kumar Mandal",
+    "employee_device_id": "127"
+  },
+  {
+    "employee_id": "HR-EMP-00122",
+    "employee_name": "Sanjit Sant",
+    "employee_device_id": "128"
+  },
+  {
+    "employee_id": "HR-EMP-00123",
+    "employee_name": "Puja Sah",
+    "employee_device_id": "129"
+  },
+  {
+    "employee_id": "HR-EMP-00124",
+    "employee_name": "Shrijana Yonjan Tamang",
+    "employee_device_id": "130"
+  },
+  {
+    "employee_id": "HR-EMP-00125",
+    "employee_name": "Rajababu Thakur",
+    "employee_device_id": "131"
+  },
+  {
+    "employee_id": "HR-EMP-00126",
+    "employee_name": "Trishla Rouniyar",
+    "employee_device_id": "132"
+  },
+  {
+    "employee_id": "HR-EMP-00127",
+    "employee_name": "Hemant Kumar Majhi",
+    "employee_device_id": "133"
+  },
+  {
+    "employee_id": "HR-EMP-00128",
+    "employee_name": "Bibek Marik",
+    "employee_device_id": "134"
+  },
+  {
+    "employee_id": "HR-EMP-00129",
+    "employee_name": "Dhiraj Kumar Rajbanshi",
+    "employee_device_id": "135"
+  },
+  {
+    "employee_id": "HR-EMP-00130",
+    "employee_name": "Nita Rajbanshi",
+    "employee_device_id": "136"
+  },
+  {
+    "employee_id": "HR-EMP-00131",
+    "employee_name": "Mahesh  Kumar Sah",
+    "employee_device_id": "137"
+  },
+  {
+    "employee_id": "HR-EMP-00132",
+    "employee_name": "Purushotam Chaudhary",
+    "employee_device_id": "138"
+  },
+  {
+    "employee_id": "HR-EMP-00133",
+    "employee_name": "Sunil Kumar Baniya",
+    "employee_device_id": "139"
+  },
+  {
+    "employee_id": "HR-EMP-00134",
+    "employee_name": "Bikram Prasad Gupta",
+    "employee_device_id": "140"
+  },
+  {
+    "employee_id": "HR-EMP-00135",
+    "employee_name": "Somit Kumar Karn",
+    "employee_device_id": "141"
+  },
+  {
+    "employee_id": "HR-EMP-00136",
+    "employee_name": "Januka B.K.",
+    "employee_device_id": "142"
+  },
+  {
+    "employee_id": "HR-EMP-00137",
+    "employee_name": "Lalita Kamat",
+    "employee_device_id": "143"
+  },
+  {
+    "employee_id": "HR-EMP-00138",
+    "employee_name": "Jahana Thakur",
+    "employee_device_id": "144"
+  },
+  {
+    "employee_id": "HR-EMP-00139",
+    "employee_name": "Dipak Kumar Sah",
+    "employee_device_id": "145"
+  },
+  {
+    "employee_id": "HR-EMP-00140",
+    "employee_name": "Minu Rayamajhi",
+    "employee_device_id": "146"
+  },
+  {
+    "employee_id": "HR-EMP-00141",
+    "employee_name": "Sita Thapa",
+    "employee_device_id": "147"
+  },
+  {
+    "employee_id": "HR-EMP-00142",
+    "employee_name": "Sushil Mandal",
+    "employee_device_id": "148"
+  },
+  {
+    "employee_id": "HR-EMP-00143",
+    "employee_name": "Gopal Kumar Yadav",
+    "employee_device_id": "149"
+  },
+  {
+    "employee_id": "HR-EMP-00144",
+    "employee_name": "Priyanka Mehta",
+    "employee_device_id": "150"
+  },
+  {
+    "employee_id": "HR-EMP-00145",
+    "employee_name": "Anam Saba",
+    "employee_device_id": "158"
+  },
+  {
+    "employee_id": "HR-EMP-00146",
+    "employee_name": "Simran  Subba",
+    "employee_device_id": "151"
+  },
+  {
+    "employee_id": "HR-EMP-00147",
+    "employee_name": "Priya Magar",
+    "employee_device_id": "152"
+  },
+  {
+    "employee_id": "HR-EMP-00148",
+    "employee_name": "Poonam Majhi",
+    "employee_device_id": "153"
+  },
+  {
+    "employee_id": "HR-EMP-00149",
+    "employee_name": "Yashoda Rajbanshi",
+    "employee_device_id": "154"
+  },
+  {
+    "employee_id": "HR-EMP-00150",
+    "employee_name": "Jiten Majhi",
+    "employee_device_id": "155"
+  },
+  {
+    "employee_id": "HR-EMP-00151",
+    "employee_name": "Sudhir Singh Rathour",
+    "employee_device_id": "156"
+  },
+  {
+    "employee_id": "HR-EMP-00152",
+    "employee_name": "Alipchand Sah",
+    "employee_device_id": "157"
+  },
+  {
+    "employee_id": "HR-EMP-00153",
+    "employee_name": "Jyoti Mandal",
+    "employee_device_id": "159"
+  },
+  {
+    "employee_id": "HR-EMP-00154",
+    "employee_name": "Rajnu Kumari Chaudhary",
+    "employee_device_id": "161"
+  },
+  {
+    "employee_id": "HR-EMP-00155",
+    "employee_name": "Krishna  Kumar Kamat",
+    "employee_device_id": "162"
+  },
+  {
+    "employee_id": "HR-EMP-00156",
+    "employee_name": "Lalita Majhi",
+    "employee_device_id": "164"
+  },
+  {
+    "employee_id": "HR-EMP-00157",
+    "employee_name": "Sarita Kumari  Das",
+    "employee_device_id": "165"
+  },
+  {
+    "employee_id": "HR-EMP-00158",
+    "employee_name": "Sunita Nepal",
+    "employee_device_id": "169"
+  },
+  {
+    "employee_id": "HR-EMP-00159",
+    "employee_name": "Sabita Yadav",
+    "employee_device_id": "170"
+  },
+  {
+    "employee_id": "HR-EMP-00160",
+    "employee_name": "Sunita Kumari  Paswan",
+    "employee_device_id": "172"
+  },
+  {
+    "employee_id": "HR-EMP-00161",
+    "employee_name": "Vim Marik",
+    "employee_device_id": "171"
+  },
+  {
+    "employee_id": "HR-EMP-00162",
+    "employee_name": "Rinka Rajbanshi",
+    "employee_device_id": "166"
+  },
+  {
+    "employee_id": "HR-EMP-00163",
+    "employee_name": "Sujata Kamat",
+    "employee_device_id": "168"
+  },
+  {
+    "employee_id": "HR-EMP-00164",
+    "employee_name": "Rima Nauwag",
+    "employee_device_id": "167"
+  },
+  {
+    "employee_id": "HR-EMP-00165",
+    "employee_name": "Kajal   Kumari Mandal",
+    "employee_device_id": "174"
+  },
+  {
+    "employee_id": "HR-EMP-00166",
+    "employee_name": "Kamala  Tamang Majhi",
+    "employee_device_id": "173"
+  },
+  {
+    "employee_id": "HR-EMP-00167",
+    "employee_name": "Rabita Kumari Yadav",
+    "employee_device_id": "178"
+  },
+  {
+    "employee_id": "HR-EMP-00168",
+    "employee_name": "Sarita Chaudhary",
+    "employee_device_id": "175"
+  },
+  {
+    "employee_id": "HR-EMP-00169",
+    "employee_name": "Kulam Kumari Tajpuriya",
+    "employee_device_id": "176"
+  },
+  {
+    "employee_id": "HR-EMP-00170",
+    "employee_name": "Kamala  Bhattarai",
+    "employee_device_id": "177"
+  },
+  {
+    "employee_id": "HR-EMP-00171",
+    "employee_name": "Fulmuni  Kiski",
+    "employee_device_id": "180"
+  },
+  {
+    "employee_id": "HR-EMP-00172",
+    "employee_name": "Mamta Shrestha",
+    "employee_device_id": "182"
+  },
+  {
+    "employee_id": "HR-EMP-00173",
+    "employee_name": "Sangita Rajbanshi",
+    "employee_device_id": "183"
+  },
+  {
+    "employee_id": "HR-EMP-00174",
+    "employee_name": "Nitu Devi Roy",
+    "employee_device_id": "184"
+  },
+  {
+    "employee_id": "HR-EMP-00176",
+    "employee_name": "Roshan Biswas",
+    "employee_device_id": "186"
+  },
+  {
+    "employee_id": "HR-EMP-00177",
+    "employee_name": "Kiran Kumar Rajbanshi",
+    "employee_device_id": "189"
+  },
+  {
+    "employee_id": "HR-EMP-00178",
+    "employee_name": "Chhatra Bahadur Chetri",
+    "employee_device_id": "190"
+  },
+  {
+    "employee_id": "HR-EMP-00180",
+    "employee_name": "Khedar Chetri",
+    "employee_device_id": "191"
+  },
+  {
+    "employee_id": "HR-EMP-00181",
+    "employee_name": "Manoj Kumar Dev",
+    "employee_device_id": "192"
+  },
+  {
+    "employee_id": "HR-EMP-00182",
+    "employee_name": "Anita Paswan",
+    "employee_device_id": "194"
+  },
+  {
+    "employee_id": "HR-EMP-00183",
+    "employee_name": "Khusbu Dahal",
+    "employee_device_id": "196"
+  },
+  {
+    "employee_id": "HR-EMP-00184",
+    "employee_name": "Renu Chaudhary",
+    "employee_device_id": "197"
+  },
+  {
+    "employee_id": "HR-EMP-00185",
+    "employee_name": "Asha Kumari Mandal",
+    "employee_device_id": "193"
+  },
+  {
+    "employee_id": "HR-EMP-00186",
+    "employee_name": "Devi Nepali",
+    "employee_device_id": "198"
   }
 ]
- 
