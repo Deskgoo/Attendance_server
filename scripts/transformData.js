@@ -2,7 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const { extractData } = require("./extractData");
 
-const EMPLOYEE_MAPPING_PATH = path.join(__dirname, "../data/employeeMap.json");
+const EMPLOYEE_MAPPING_PATH = path.join(
+  __dirname,
+  "../data/route/employeeMap.json"
+);
 
 // Load employee mappings from a JSON file
 async function loadEmployeeMappings() {
@@ -50,7 +53,7 @@ async function transformAndMatchData() {
         docstatus: 0,
         doctype: "Employee Checkin",
         attendance: 0,
-        shift: "General",
+        // shift: "General",
         name: `new-employee-checkin-${row.id}`, // Unique name for each check-in
         __islocal: 1,
         __unsaved: 1,
