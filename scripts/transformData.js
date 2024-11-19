@@ -54,6 +54,7 @@ async function transformAndMatchData() {
         doctype: "Employee Checkin",
         attendance: 0,
         // shift: "General",
+        // shift: "General",
         name: `new-employee-checkin-${row.id}`, // Unique name for each check-in
         __islocal: 1,
         __unsaved: 1,
