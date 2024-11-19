@@ -8,10 +8,10 @@ const axiosInstance = wrapper(axios.create({ jar }));
 let authToken;
 
 async function login() {
-  const url = "http://108.181.195.185:8000/api/method/login";
+  const url = "http://202.51.3.168:8000/api/method/login";
   const credentials = {
     usr: "Administrator",
-    pwd: "deskgoo123",
+    pwd: "admin",
   };
 
   try {
@@ -42,7 +42,7 @@ async function login() {
 
 async function postData(data) {
   const url =
-    "http://108.181.195.185:8000/api/method/frappe.desk.form.save.savedocs";
+    "http://202.51.3.168:8000/api/method/frappe.desk.form.save.savedocs";
 
   const headers = {
     "Content-Type": "application/json",
