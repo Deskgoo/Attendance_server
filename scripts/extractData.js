@@ -3,9 +3,9 @@ const mysql = require("mysql2/promise");
 async function extractData() {
   // Connect to MySQL
   const connection = await mysql.createConnection({
-    host: "127.0.0.1",
+    host: "202.51.3.49",
     user: "root",
-    password: "admin",
+    password: "telemko",
     database: "adms",
   });
 

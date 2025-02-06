@@ -34,7 +34,7 @@ async function transformAndMatchData() {
     }, {});
 
     // Time difference in minutes (135 minutes in this case)
-    const timeDifferenceMinutes = 135;
+    // const timeDifferenceMinutes = 135;
 
     const transformedData = mysqlData.map((row) => {
       const logType = row.status1 === 0 ? "IN" : "OUT";
@@ -43,16 +43,33 @@ async function transformAndMatchData() {
         employee_name: "Unknown",
       };
 
-      // Adjust the timestamp to account for the time difference
-      const localTimestamp = new Date(row.timestamp);
-      const adjustedTimestamp = new Date(
-        localTimestamp.getTime() - timeDifferenceMinutes * 60 * 1000
-      );
+      //   // Adjust the timestamp to account for the time difference
+      //   const localTimestamp = new Date(row.timestamp);
+      //   const adjustedTimestamp = new Date(
+      //     localTimestamp.getTime() - timeDifferenceMinutes * 60 * 1000
+      //   );
+
+      // Helper function to get the day of the week
+      function getDayOfWeek(timestamp) {
+        const date = new Date(timestamp);
+        const daysOfWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        return daysOfWeek[date.getDay()];
+      }
+      // Get the day of the week
+      const dayOfWeek = getDayOfWeek(row.timestamp);
 
       const doc = {
         docstatus: 0,
         doctype: "Employee Checkin",
-        attendance: 0,
+        // attendance: 0,
         // shift: "General",
         // shift: "General",
         name: `new-employee-checkin-${row.id}`, // Unique name for each check-in
@@ -61,14 +78,19 @@ async function transformAndMatchData() {
         owner: "Administrator",
         log_type: logType,
         // Format the adjusted timestamp as 'YYYY-MM-DD HH:mm:ss'
-        time: adjustedTimestamp
-          .toISOString()
-          .replace("T", " ")
-          .substring(0, 19),
-        skip_auto_attendance: row.status5 || 0,
+        // time: adjustedTimestamp
+        //   .toISOString()
+        //   .replace("T", " ")
+        //   .substring(0, 19),
+        time: row.timestamp,
+
+        skip_auto_attendance: 0,
         employee_name: employeeData.employee_name,
         employee: employeeData.employee_id,
-        device_id: row.table,
+        device_id: row.employee_id,
+        latitude: "26.4547555",
+        longitude: "87.2727071",
+        day: dayOfWeek,
       };
 
       return {

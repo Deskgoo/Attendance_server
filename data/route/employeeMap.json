@@ -840,6 +840,11 @@
     "employee_device_id": "177"
   },
   {
+    "employee_id": "HR-EMP-00089",
+    "employee_name": "Phul Kumari Mukhiya",
+    "employee_device_id": "179"
+  },
+  {
     "employee_id": "HR-EMP-00171",
     "employee_name": "Fulmuni  Kiski",
     "employee_device_id": "180"
@@ -908,5 +913,157 @@
     "employee_id": "HR-EMP-00186",
     "employee_name": "Devi Nepali",
     "employee_device_id": "198"
-  }
+  },
+    {
+      "employee_id": "HR-EMP-00188",
+      "employee_name": "Kiran Mandal",
+      "employee_device_id": "199"
+    },
+    {
+      "employee_id": "HR-EMP-00189",
+      "employee_name": "Rambati Kumari Gangai",
+      "employee_device_id": "200"
+    },
+    {
+      "employee_id": "HR-EMP-00190",
+      "employee_name": "Hari Chandra Yadav",
+      "employee_device_id": "201"
+    },
+    {
+      "employee_id": "HR-EMP-00175",
+      "employee_name": "Pabitra B.K",
+      "employee_device_id": "202"
+    },
+    {
+      "employee_id": "HR-EMP-00191",
+      "employee_name": "Utpnna Rajak",
+      "employee_device_id": "203"
+    },
+    {
+      "employee_id": "HR-EMP-00192",
+      "employee_name": "Sabita Kumari Mehta",
+      "employee_device_id": "204"
+    },
+    {
+      "employee_id": "HR-EMP-00193",
+      "employee_name": "Safwan Ansari",
+      "employee_device_id": "205"
+    },
+    {
+      "employee_id": "HR-EMP-00194",
+      "employee_name": "Arbind Mandal",
+      "employee_device_id": "206"
+    },
+    {
+      "employee_id": "HR-EMP-00195",
+      "employee_name": "Divya Ghatani",
+      "employee_device_id": "207"
+    },
+    {
+      "employee_id": "HR-EMP-00196",
+      "employee_name": "Bhawana Nepal",
+      "employee_device_id": "208"
+    },
+    {
+      "employee_id": "HR-EMP-00197",
+      "employee_name": "Prativa Sah",
+      "employee_device_id": "209"
+    },
+    {
+      "employee_id": "HR-EMP-00198",
+      "employee_name": "Chandrika Marik",
+      "employee_device_id": "210"
+    },
+    {
+      "employee_id": "HR-EMP-00199",
+      "employee_name": "Sulav Majhi",
+      "employee_device_id": "211"
+    },
+    {
+      "employee_id": "HR-EMP-00200",
+      "employee_name": "Raju Kumar Shah",
+      "employee_device_id": "212"
+    },
+    {
+      "employee_id": "HR-EMP-00201",
+      "employee_name": "Ganesh Prashad Wasti",
+      "employee_device_id": "214"
+    },
+    {
+      "employee_id": "HR-EMP-00202",
+      "employee_name": "Manoj Shrestha",
+      "employee_device_id": "213"
+    }, 
+    {
+      "employee_id": "HR-EMP-00203",
+      "employee_name": "Chandra Mukhiya ",
+      "employee_device_id": "220"
+    },
+    {
+      "employee_id": "HR-EMP-00204",
+      "employee_name": "Saloni Kumari Yadav",
+      "employee_device_id": "216"
+    },
+    {
+      "employee_id": "HR-EMP-00205",
+      "employee_name": "Ganesh Mandal",
+      "employee_device_id": "219"
+    }, {
+      "employee_id": "HR-EMP-00206",
+      "employee_name": "Bivek Kumar Chaudhary",
+      "employee_device_id": "222"
+    }, {
+      "employee_id": "HR-EMP-00207",
+      "employee_name": "Shyam Kumar Rajbanshi",
+      "employee_device_id": "223"
+    }, {
+      "employee_id": "HR-EMP-00210",
+      "employee_name": "Shobha Poddar",
+      "employee_device_id": "224"
+    }, {
+      "employee_id": "HR-EMP-00211",
+      "employee_name": "Prakash Bhattrai",
+      "employee_device_id": "225"
+    }, {
+      "employee_id": "HR-EMP-00212",
+      "employee_name": "Manohar Mukhiya",
+      "employee_device_id": "226 "
+    }, {
+      "employee_id": "HR-EMP-00213",
+      "employee_name": "Sabita Mandal",
+      "employee_device_id": "227"
+    }, {
+      "employee_id": "HR-EMP-00214",
+      "employee_name": "Ashok Mehta",
+      "employee_device_id": "219"
+    }, {
+      "employee_id": "HR-EMP-00215",
+      "employee_name": "Santosh KC",
+      "employee_device_id": "229"
+    }, {
+      "employee_id": "HR-EMP-00216",
+      "employee_name": "Prakash Giri",
+      "employee_device_id": "230"
+    }, {
+      "employee_id": "HR-EMP-00217",
+      "employee_name": "Krishna Chaulagy",
+      "employee_device_id": "231"
+    },
+    {
+      "employee_id": "HR-EMP-00218",
+      "employee_name": "Manoj Tamang",
+      "employee_device_id": "232"
+    }    ,
+    {
+      "employee_id": "HR-EMP-00219",
+      "employee_name": "Bishal Das",
+      "employee_device_id": "233"
+    },
+    {
+      "employee_id": "HR-EMP-00220",
+      "employee_name": "Bishal Das",
+      "employee_device_id": "234"
+    }
+  
+  
 ]

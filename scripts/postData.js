@@ -4,11 +4,14 @@ const { wrapper } = require("axios-cookiejar-support");
 
 const jar = new CookieJar();
 const axiosInstance = wrapper(axios.create({ jar }));
+const serverUrl = "http://202.51.3.49:8000";
 
 let authToken;
+let postCount = 0;
+let errorCount = 0;
 
 async function login() {
-  const url = "http://202.51.3.168:8000/api/method/login";
+  const url = `${serverUrl}/api/method/login`;
   const credentials = {
     usr: "Administrator",
     pwd: "admin",
@@ -41,8 +44,7 @@ async function login() {
 }
 
 async function postData(data) {
-  const url =
-    "http://202.51.3.168:8000/api/method/frappe.desk.form.save.savedocs";
+  const url = `${serverUrl}/api/method/frappe.desk.form.save.savedocs`;
 
   const headers = {
     "Content-Type": "application/json",
@@ -51,14 +53,15 @@ async function postData(data) {
 
   for (const item of data) {
     try {
-      console.log(`Posting data: ${JSON.stringify(item)}`);
+      // console.log(`Posting data: ${JSON.stringify(item)}`);
       const response = await axiosInstance.post(url, item, { headers });
-      console.log("Post successful:", response.data);
+      postCount++;
+      console.log(`Posted data #${postCount}:`);
+      // console.log("Post successful:", response.data);
     } catch (error) {
-      console.error(
-        "Error posting data:",
-        error.response ? error.response.data : error.message
-      );
+      errorCount++;
+
+      console.error(`Posting data failed for item: ${errorCount}`, error);
     }
   }
 }
